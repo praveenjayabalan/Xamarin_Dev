@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             xmlns:local="clr-namespace:CheckNet;assembly=CheckNet"
+             x:Class="CheckNet.View.Login">
+    
+    <ContentPage.ToolbarItems>
+       <ToolbarItem  Clicked="ToolbarClicked"  Text="mytext" Command="{Binding ChangeLanguageCommand}" Icon="lanworld.png"  />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content >
+        <StackLayout VerticalOptions="Start" BackgroundColor="#ffffff">
+             <Image Source="ChecknetLogo.png" HeightRequest="100" WidthRequest="200" HorizontalOptions="Center"></Image>
+            
+             <StackLayout BackgroundColor="#f2f2f2" Padding="10" Margin="5" HeightRequest="235">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Label Text="{Binding Login_RememberMe}" HeightRequest="20" ></Label>
+                    <!--<Switch IsToggled = "False"></Switch>-->
+                    <!--<local:CnSwitch  IsToggled="False"></local:CnSwitch>-->
+                    <Switch IsToggled="True" ></Switch>
+                </StackLayout>
+                 
+                <local:MyEntry Text="" Placeholder="{Binding Login_Username}" HeightRequest="40"/>
+                <local:MyEntry Text="" Placeholder="{Binding Login_Password}" HeightRequest="40"/>
+               
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Label Margin="0,0,0,20" Text="Help" VerticalOptions="EndAndExpand"
+                        HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                    Tapped="Handle_Clicked"
+                                    NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text="{Binding Login_PasswordHint}"  Opacity="0.7" TextColor="#ed103c"></Label>
+                </StackLayout>
+
+                <Button Text="{Binding Login_Login}" HeightRequest="45"  BackgroundColor="#ed103c" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Start" BackgroundColor="#ffffff" Margin="10,10,10,10">
+
+                <Label HorizontalTextAlignment="Center" FontSize="Micro" Text="{Binding Login_Contentone}"/>
+                <Label HorizontalTextAlignment="Center" FontSize="Micro" Text="{Binding Login_Contenttwo}"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

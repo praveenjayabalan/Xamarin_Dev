@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckNet.App">
+	<Application.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="PageBackgroundColor">Blue</Color>
+            <Color x:Key="NormalTextColor">#ed103cs</Color>
+            <Color x:Key="BgColor">#cc0000</Color>
+            <Color x:Key="FgColor">#ffffff</Color>
+         
+            <Style x:Key="Buttonstyle" TargetType="Button">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{StaticResource NormalTextColor}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource BgColor}"/>
+            </Style>
+
+            <Style x:Key="MenuListViewstyle" TargetType="ListView" >
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Margin" Value="5,5,5,5" />
+                <Setter Property="HeightRequest" Value="20"/>
+                
+                <!--<Setter Property="BackgroundColor" Value="{StaticResource FgColor}" />-->
+            </Style>
+            
+            
+            <Style x:Key="BarHeaderstyle" TargetType="Label" >
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="HeightRequest" Value="45"/>
+                <Setter Property="Margin" Value="0,0,0,0" />
+                <Setter Property="BackgroundColor" Value="{StaticResource BgColor}" />
+                <Setter Property="TextColor" Value="{StaticResource FgColor}" />
+            </Style>
+
+        </ResourceDictionary>
+        <!-- Application resource dictionary -->
+
+	</Application.Resources>
+</Application>

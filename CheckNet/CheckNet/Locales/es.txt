@@ -1,0 +1,40 @@
+﻿LoadedLanguageTitle = Idioma cargado
+AvailableLanguages = Idiomas disponibles
+ChangeLanguage = Cambiar idioma
+
+SingleEnumTitle = Valor único de Enum
+EnumValuesTitle = Valores de enum
+
+GreetingTitle = Saludo
+GreetingValue = Hola {0}, ¿cómo te va?
+
+MultilineTitle = Texto multi-línea
+MultilineValue = Este texto 
+abarca múltiples líneas\nen el archivo de texto
+
+Animals.Dog = Perro
+Animals.Cat = Gato
+Animals.Rat = Rata
+Animals.Tiger = Tigre
+Animals.Monkey = Mono
+
+Cancel = Cancelar
+ChooseLanguage = Elige lengua
+
+
+Login_RememberMe=Recuérdame
+Login_Username=Nombre de Usuario
+Login_Password=Contraseña
+Login_PasswordHint=Recordarorio de Contraseña
+Login_Login=iniciar Sesión
+Login_Contentone=Esta aplicación contiene información confidencial. Esta información se proporciona para el uso tan solo de usuarios autorizados. El acceso no autorizado a la información en este sistema puede resultar en un proceso penal y / o civil. Todos los accesos son registrados y esta información se utilizara para apoyar cualquier enjuiciamiento.
+Login_Contenttwo=El material contenido en esta aplicación es copyright @ 2001-2018 Checkpoint Systems, Inc.
+
+
+Menu_ContactUs=Contáctenos
+Menu_FAQ=PF 
+Menu_TermsConditions=Términos y condiciones 
+Menu_Policies=Políticas 
+Menu_Help=Ayuda 
+
+FAQ_Content = my FAQ Spain

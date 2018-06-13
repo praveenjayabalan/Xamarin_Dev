@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+                   xmlns:local="clr-namespace:CheckNet;assembly=CheckNet"
+             x:Class="CheckNet.MainPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage   Title="Master"  >
+            <ContentPage.Content  >
+
+
+                <StackLayout   Orientation="Vertical" Spacing="0"  BackgroundColor="#e6e6e6" >
+                    <StackLayout  >
+                        <Grid  Padding="5,5,5,5" BackgroundColor="#cc0000" >
+                     
+                        <Grid.ColumnDefinitions >
+                            <ColumnDefinition Width="20"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="20"></ColumnDefinition>
+
+
+                            </Grid.ColumnDefinitions>
+                            <BoxView></BoxView>
+                            <Image  HorizontalOptions="CenterAndExpand" Source="Exit.png"   VerticalOptions="Center" >
+                                <Image.GestureRecognizers >
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"  NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                            </Image>
+                            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
+                            <Image Source="Checknettitle.png"  ></Image>                            
+                            <!--<Label Grid.Column="1" Style="{StaticResource BarHeaderstyle}"  Text="Check.Net" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ></Label>-->
+                            </StackLayout>
+
+                        </Grid>
+                    </StackLayout>
+                    <ListView  x:Name="lst" HasUnevenRows="True" ItemTapped="MainListView_ItemTapped"  >
+                        <ListView.ItemTemplate  >
+                            <DataTemplate >
+                                <ViewCell >
+                                    <Grid Margin="8,8,8,8">
+                                        <Grid.ColumnDefinitions>
+
+                                            <ColumnDefinition Width="20"></ColumnDefinition>
+                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                            <ColumnDefinition Width="20"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="0" Source="{Binding Icon}"  HeightRequest="13" WidthRequest="33" HorizontalOptions="FillAndExpand"></Image>
+                                        <Label  Grid.Column="1" Text="{Binding MenuName}"  HorizontalTextAlignment="Start" Style="{StaticResource MenuListViewstyle}" HorizontalOptions="StartAndExpand"  VerticalOptions="FillAndExpand" TextColor="#ed103c"></Label>
+                                        <Image Grid.Column="2" Source="{Binding ArrowIcon}" HeightRequest="15" WidthRequest="15" HorizontalOptions="FillAndExpand"></Image>
+                                        
+                                    </Grid>
+                                    <!--<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"  Orientation="Vertical"  >
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image Source="{Binding Icon}"  HeightRequest="33" WidthRequest="33" HorizontalOptions="StartAndExpand"></Image>
+                                            <Label Text="{Binding MenuName}"  HorizontalTextAlignment="Start" Style="{StaticResource MenuListViewstyle}" HorizontalOptions="StartAndExpand"  VerticalOptions="StartAndExpand" TextColor="OrangeRed"></Label>
+                                            <Image Source="{Binding ArrowIcon}" HeightRequest="15" WidthRequest="15" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand"></Image>
+                                        </StackLayout>
+                                       
+                                    </StackLayout>-->
+                                    
+
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="1"  BackgroundColor="LightYellow">
+            <ContentPage.Content>
+
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Client Page"></Label>
+                </StackLayout>
+            </ContentPage.Content>
+            
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+    
+</MasterDetailPage>
+    
+    

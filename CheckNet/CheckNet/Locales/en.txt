@@ -1,0 +1,43 @@
+﻿LoadedLanguageTitle = Loaded language
+AvailableLanguages = Available languages
+ChangeLanguage = Change language
+
+SingleEnumTitle = Single Enum value
+EnumValuesTitle = Enum values
+
+GreetingTitle = Greeting
+GreetingValue = Hello {0}, how are you doing?
+
+MultilineTitle = Multi-line text
+MultilineValue = This text 
+spans multiple lines\nin the locale file
+
+
+
+Cancel = Cancel
+ChooseLanguage = Choose Language
+
+
+Login_RememberMe=Remember me
+Login_Username=User Name
+Login_Password=Password
+Login_PasswordHint=Password Hint
+Login_Login=Log In
+Login_Contentone=This app contains confidential and proprietary information.this information is provided for the benefit of authorized users only.Unauthorized access to information on this system may result in criminal and/or civil prosecution.All accesses are logged and this information will be used to support any prosecution.
+Login_Contenttwo=Material contained on this app is copyright @2001-2018 Checkpoint Systems,Inc.
+
+
+
+Menu_ContactUs=Contact Us test
+Menu_FAQ=FAQ 
+Menu_TermsConditions=Terms & Conditions 
+Menu_Policies=Policies 
+Menu_Help=Help 
+
+
+Forgot_Password=Forgot your Password eg
+Forgot_info=Please enter your email address to receive a new password
+Forgot_Email=Email
+Forgot_pass=SEND NEW PASSWORD
+
+FAQ_Content = my FAQ english

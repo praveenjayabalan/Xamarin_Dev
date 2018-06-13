@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckNet.View.ForgotPass"
+             xmlns:local="clr-namespace:CheckNet;assembly=CheckNet"
+              Title="Reset Password">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="cancel.png"  />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout >
+            <Image Source="Checknettitle.png"  HorizontalOptions="Center"></Image>
+            
+            
+            <StackLayout>
+                <Grid  Padding="5,5,5,5" BackgroundColor="#ed103c" >
+
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="20"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="Fhelp"></Image>
+                    <Label Grid.Column="1" Text="{Binding Forgot_Password}" BackgroundColor="#ed103c" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="45" ></Label>
+                </Grid>
+                <Label Opacity="2" HorizontalTextAlignment="Center" FontSize="Medium" HeightRequest="45" Text="Please enter your email address to receive a new password"/>
+                <local:MyEntry Text="" Placeholder="Email" />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="SEND NEW PASSWORD"  HeightRequest="45" BackgroundColor="#ed103c" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

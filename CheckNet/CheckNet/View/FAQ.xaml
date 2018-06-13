@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CheckNet"
+             x:Class="CheckNet.View.FAQ"
+             Title="FAQ"
+             >
+    
+       <StackLayout Orientation="Horizontal">
+  <Label HorizontalOptions="StartAndExpand" Text="Label" />
+  <Button HorizontalOptions="End" Text="Button" />
+</StackLayout>
+    <!--<StackLayout>
+    <ContentPage.BindingContext>
+            <local:MenuItem.MainViewModel/>
+        </ContentPage.BindingContext>
+        <ListView Margin="0,80"  
+              ItemTapped="ListViewItem_Tabbed"  
+              ItemsSource="{Binding Products}"  
+              HasUnevenRows="True"  
+             >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <ViewCell>
+                        <StackLayout >
+                            
+                            
+                            <Label Text="{Binding Title}"  
+                               FontSize="Medium"  
+                               TextColor="Red" />
+                            <StackLayout IsVisible="{Binding Isvisible}"  
+                                     Orientation="Horizontal"  
+                                     Margin="0,0,80,0">
+                            <Label Text="Address:
+                                  101 Wolf Dr.
+                                  P.O.Box 188
+                                  Thorofare,NJ 08086
+                                  Phone:
+                                  +1 (800)257-5540
+                                  +1 (856)848-1800
+                                  Fax:
+                                  +1(856)848-0937
+                                  Email:
+                                  Checknet@checkpt.com"></Label>
+                           
+                        </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>-->
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿LoadedLanguageTitle = Langue chargée
+AvailableLanguages = Langues disponibles
+ChangeLanguage = Changer la langue
+
+SingleEnumTitle = Valeur Enum unique
+EnumValuesTitle = Valeurs enum
+
+GreetingTitle = Salutation
+GreetingValue = Bonjour {0}, comment allez-vous?
+
+MultilineTitle = Texte multiligne
+MultilineValue = Ce texte
+couvre plusieurs lignes \nin le fichier de paramètres régionaux
+
+Animals.Dog = Chien 🐶
+Animals.Cat = Chat 🐈
+Animals.Rat = Rat 🐁
+Animals.Tiger = Tigre 🐅
+Animals.Monkey = Singe 🐵
+
+Cancel = Annuler
+ChooseLanguage = Choisir la langue
+
+
+Login_RememberMe=Souviens-toi de moi
+Login_Username=Nom d'utilisateur
+Login_Password=Password
+Login_PasswordHint=
+Mot de passe
+Login_Login=Log In
+Login_Contentone=This app contains confidential and proprietary information.this information is provided for the benefit of authorized users only.Unauthorized access to information on this system may result in criminal and/or civil prosecution.All accesses are logged and this information will be used to support any prosecution.
+Login_Contenttwo=Material contained on this app is copyright @2001-2018 Checkpoint Systems,Inc.
+
+
+
+Menu_ContactUs=Contact Us france
+Menu_FAQ=FAQ  france
+Menu_TermsConditions=Terms & Conditions france
+Menu_Policies=Policies france
+Menu_Help=Help france
+
+
+FAQ_Content = my FAQ France

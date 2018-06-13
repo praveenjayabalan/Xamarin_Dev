@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckNet.View.ContactUs"
+             xmlns:local="clr-namespace:CheckNet"
+             Title="Contact Us" >
+
+    
+    <ContentPage Title="USA" BackgroundColor="White">
+        <StackLayout Orientation="Vertical"  Padding="5">
+            <Button Text="Write Email" BackgroundColor="Red" Clicked="Write_Email" ></Button>
+        </StackLayout>
+
+    </ContentPage>
+
+    <ContentPage Title="Europe" BackgroundColor="White" >
+        <StackLayout Padding="5">
+            <Button Text="Write Email" BackgroundColor="Red" Clicked="Write_Email" ></Button>
+
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Asia">
+        <StackLayout Padding="5">
+            <Button Text="Write Email" BackgroundColor="Red" Clicked="Write_Email" ></Button>
+
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Australia" BackgroundColor="White">
+        <StackLayout Padding="5">
+            <Button Text="Write Email" BackgroundColor="Red" Clicked="Write_Email" ></Button>
+            
+        </StackLayout>
+    </ContentPage>
+        
+</TabbedPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CheckNet;assembly=CheckNet"
+             x:Class="CheckNet.View.Email"
+             Title="Write Email">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem    Icon="js.png"  />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HeightRequest="15" Padding="5" Margin="5,5,5,5">
+            <local:MyEntry Text="" Placeholder="Name" HeightRequest="40"/>
+            <local:MyEntry Text="" Placeholder="Email" HeightRequest="40"/>
+            <local:MyEntry Text="" Placeholder="Organization" HeightRequest="40"/>
+            <local:MyEntry Text="" Placeholder="Order Number" HeightRequest="40"/>
+            <local:MyEntry Text="" Placeholder="Message" HeightRequest="40"/>
+            <StackLayout>
+            <Button Text="Send" HeightRequest="45"  BackgroundColor="#ed103c" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
